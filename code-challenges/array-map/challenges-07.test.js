@@ -20,7 +20,7 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const addTea = () => {
-  // Solution code here...
+  $('ul').append('<li>tea</li>');
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -34,7 +34,11 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
-  // Solution code here...
+ let newArray = []; 
+for(let i = 0; i < arr.length; i++) {
+  newArray.push(Math.pow(2, arr[i]));
+  }
+return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,8 +48,14 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
-};
+  let newArray = [];
+  arr.forEach(value => {
+    newArray.push(Math.pow(2, value));
+  });
+  return newArray;
+};  
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -53,9 +63,7 @@ CHALLENGE 4
 Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 1 and your forEachTwoToThe function from challenge 2, but uses map instead of a for loop or forEach.
 ------------------------------------------------------------------------------------------------ */
 
-const mapTwoToThe = (arr) => {
-  // Solution code here...
-};
+const mapTwoToThe = (arr) => arr.map(value => Math.pow(2, value));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
