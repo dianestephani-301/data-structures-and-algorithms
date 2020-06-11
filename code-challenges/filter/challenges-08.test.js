@@ -22,7 +22,7 @@ const createServer = () => {
 
 
 function sayHello(request, response){
-  // Solution code here...
+  response.send('Hello from the back-end');
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,9 +33,7 @@ Write a function named oddValues that, given an array of integers as input, uses
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const oddValues = (arr) => {
-  // Solution code here...
-};
+const oddValues = (arr) => arr.filter(value => value % 2 !== 0);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -49,8 +47,11 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  // Solution code here...
-};
+let vowelFilter = /[aeiou]/g;
+return arr.filter(value => {
+  return value.match(vowelFilter);
+});
+ };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -61,9 +62,7 @@ Write a function named notInFirstArray that, given two arrays as input, uses fil
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
-};
+const notInFirstArray = (forbiddenValues, arr) => arr.filter(element => !forbiddenValues.includes(element));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
