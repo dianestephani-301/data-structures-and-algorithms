@@ -14,3 +14,6 @@
 - [Values vs. Reference](https://github.com/dianestephani/data-structures-and-algorithms/blob/master/code-challenges/values-vs-reference/challenges-02.test.js)
 - [Challenge 13](https://github.com/dianestephani/data-structures-and-algorithms/blob/master/code-challenges/challenges-13.test.js)
 - [Two Dimensional Arrays](https://github.com/dianestephani/data-structures-and-algorithms/blob/master/two-dimensional-arrays/challenges-12.test.js)
+
+## 401
+- [arrayShift](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/code-challenges/arrayShift)
