@@ -9,4 +9,4 @@ Insert a new value into an array while keeping everything in numberical order.
 We used a for loop with array.splice. Inside the for loop we used a conditional statement to compare each element to the target input. 
 ## Solution
 <!-- Embedded whiteboard image -->
-![array.shift.jpg](./assets/array.shift.jpg)
+![array.shift.jpg](array.shift.jpg)
