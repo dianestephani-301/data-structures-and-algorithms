@@ -16,4 +16,4 @@
 - [Two Dimensional Arrays](https://github.com/dianestephani/data-structures-and-algorithms/blob/master/two-dimensional-arrays/challenges-12.test.js)
 
 ## 401
-- [arrayShift](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/code-challenges/arrayShift)
+- [arrayShift](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/401-challenges/arrayShift)
