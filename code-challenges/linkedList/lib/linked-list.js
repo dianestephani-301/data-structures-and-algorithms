@@ -33,8 +33,8 @@ class LinkedList {
     let string = '';
     while(current){
       if (current !== null){
-        string = string + '{' + current.value + '}';
-        // string = `${string} + ${current.value} +`;
+        // string = string + '{' + current.value + '}';
+        string = `${string} ${current.value}`;
         current = current.next;
       }
       if (current == null){
