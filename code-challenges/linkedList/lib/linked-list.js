@@ -43,6 +43,38 @@ class LinkedList {
     }
     console.log(string);
   }
+  //Via Brian's class example
+  append(value) {
+    let node = new Node(value);
+
+    if (!this.head) {
+      this.head = node;
+    } else {
+      let current = this.head;
+
+      while(current.next) {
+        current = current.next;
+      }
+  
+      current.next = node;
+    }
+
+    return this;
+  }
+
+  insertBefore(value, newVal){
+    let current = this.head;
+    let previous;
+    while(current.next){
+      if (current.value === value){
+        let node = new Node(value);
+        node.next = current;
+        previous.next = node;
+      }
+      previous = current;
+      current = current.next;
+    }
+  }
 }
 
 module.exports = LinkedList;
