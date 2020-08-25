@@ -11,5 +11,18 @@ list.insert('Rebel');
 list.includes('Rebel');
 list.toString();
 
+//Via Davee
+list.insert('first');
+list.insert('second');
+list.insert('third');
+list.insert('4th');
+list.insert('fifth');
+list.append('last');
+list.insertAfter('4th', '4.5');
 
-console.log(list);
+list.toString();
+console.log('list at beginning: ', list);
+
+list.insertBefore('second', 'insertThis');
+
+console.log('After insert:', list);
