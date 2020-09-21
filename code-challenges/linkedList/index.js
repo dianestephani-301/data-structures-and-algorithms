@@ -26,3 +26,5 @@ console.log('list at beginning: ', list);
 list.insertBefore('second', 'insertThis');
 
 console.log('After insert:', list);
+
+module.exports = list;
