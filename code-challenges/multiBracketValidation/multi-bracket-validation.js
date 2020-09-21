@@ -1,31 +1,35 @@
 'use strict';
 
-let string = '[](){}';
-const openingBracket = ['[', '(', '{'];
-let closingBracket = [']', ')', '}'];
-//create a finalResult variable instead of closing bracket, will contain the full '{}' pair.
+const Stack = require('./stack');
+let string = '[](){}'
+let stack = new Stack();
 
 
-//use subString somewhere
 function multiBracketValidation(string){
   let array = string.split('');
-  array.forEach(subString => {
-    if (openingBracket){
+  const result = array.forEach(subString => {
+    if (subString == '[' || '(' || '{'){
       stack.push();
     }
 
-    if (closingBracket){
+    if (subString == ']' || ')' || '}'){
       let pop = array.pop();
       return pop;
     }
 
-    if (pop != openingBracket){
+    if (pop != '[' || '(' || '{'){
       return false;
-      break;
     }
-  });
+  })
 
-  if (!stack){
+  if(!stack.peek()){
     return true;
   }
+  else if(stack.peek() !=  '[' || '(' || '{' || ']' || ')' || '}'){
+    return true;
+  }
+
+  console.log(result);
 }
+
+console.log(multiBracketValidation(string));
