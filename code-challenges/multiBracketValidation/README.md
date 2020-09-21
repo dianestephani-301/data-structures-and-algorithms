@@ -24,7 +24,7 @@ VSCode
 
 ### Whiteboard
 
-![Code Challenge 13](https://via.placeholder.com/500x250)
+![Code Challenge 13](https://github.com/dianestephani/data-structures-and-algorithms/blob/master/code-challenges/multiBracketValidation/whiteboard/Code%20Challenge%2013.jpg)
 
 ---------------------------
 
