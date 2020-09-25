@@ -19,3 +19,4 @@
 - [arrayShift](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/401-challenges/arrayShift)
 - [LinkedList](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/code-challenges/linkedList)
 - [LinkedList Zip](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/code-challenges/ll-zip)
+- [multiBracketValidation](https://github.com/dianestephani/data-structures-and-algorithms/tree/master/code-challenges/multiBracketValidation)
